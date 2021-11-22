@@ -1,0 +1,139 @@
+package com.test;
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("apple");
+        arrayList.add("banana");
+        arrayList.add("strawberry");
+        arrayList.add("kiwi");
+        arrayList.add("blueberry");
+        System.out.println("arraylist : " + arrayList);
+
+        // 1.remove the third element from the arraylist
+        arrayList.remove(3);
+        System.out.println("remove the third element : " + arrayList);
+
+        // 2.search an element in an arraylist
+        boolean searchElement = arrayList.contains("strawberry");
+        System.out.println("search an element (strawberry): " + searchElement);
+
+        // 3.sort an arraylist
+        Collections.sort(arrayList);
+        System.out.println("sort arraylist : " + arrayList);
+
+        // 4.copy one arraylist into another
+        ArrayList<String> arrayList1 = new ArrayList<>(arrayList);
+        System.out.println("copied arraylist : " + arrayList1);
+
+        // 5.shuffle elements in an arraylist
+        Collections.shuffle(arrayList1);
+        System.out.println("shuffled arraylist : " + arrayList1);
+
+        // 6.replace second element with a specified element
+        arrayList1.set(2,"avocado");
+        System.out.println("replace second element : " + arrayList1);
+
+        // 7.convert hashSet1 to an array
+        HashSet<String> hashSet1 = new HashSet<>();
+        hashSet1.add("tomato");
+        hashSet1.add("potato");
+        hashSet1.add("onion");
+        hashSet1.add("broccoli");
+
+        HashSet<String> hashSet2 = new HashSet<>();
+        hashSet2.add("broccoli");
+        hashSet2.add("eggplant");
+        hashSet2.add("cauliflower");
+        hashSet2.add("okra");
+        hashSet2.add("tomato");
+
+
+        String [] hashToArray = new String[hashSet1.size()];
+        hashSet1.toArray(hashToArray);
+        for (String veg : hashToArray)
+            System.out.println("hashSet1 to an array : " + veg);
+
+        // 8.convert hash set to a tree set
+        TreeSet<String> hashToTreeSet = new TreeSet<>(hashSet1);
+        System.out.println("hash conversion to tree set : " + hashToTreeSet);
+
+        // 9.convert hash set to list/arraylist
+        List<String> hashToList = new ArrayList<>(hashSet1);
+        System.out.println("hash conversion to list : " + hashToList);
+
+        // 10.compare two hash sets
+        boolean compareHash = hashSet1.equals(hashSet2);
+        System.out.println("comparing two hash sets : " + compareHash);
+
+        // 11.compare two sets and retain elements same on both sides
+        hashSet1.retainAll(hashSet2);
+        System.out.println("retaining elements from two hash sets : " + hashSet1);
+
+        // 12.clone a linked list to another linked list
+        LinkedList<String> cities = new LinkedList<>();
+        cities.add("Toronto");
+        cities.add("Vancouver");
+        cities.add("Calgary");
+        cities.add("New York");
+
+
+        LinkedList<String> citiesClone;
+        citiesClone = (LinkedList<String>) cities.clone();
+        System.out.println("Cloned list : " + citiesClone);
+
+        // 13.remove and return first element of a linked list
+        cities.removeFirst();
+        System.out.println("removed & returned first element : " + cities);
+
+        // 14. retrieves but does not remove the first element
+        String peekFirst = cities.peekFirst();
+        System.out.println("retrieves but does not remove the first element : " + peekFirst);
+
+        // 15. retrieves but does not remove the last element
+        String peekLast = cities.peekLast();
+        System.out.println("retrieves but does not remove the last element : " + peekLast);
+
+        // 16.delete all elements from a given tree map
+        TreeMap<Integer , String> treeMap = new TreeMap<>();
+        treeMap.put(95,"ninety five");
+        treeMap.put(11,"eleven");
+        treeMap.put(2,"two");
+        treeMap.put(3,"three");
+        System.out.println("treemap keys and values : " + treeMap);
+        treeMap.clear();
+        System.out.println("deleting all elements from the tree map : " + treeMap);
+
+        // 17.sort keys in tree map using comparator
+        TreeMap<Integer , String> treeMap1 = new TreeMap<>();
+        treeMap1.put(11,"eleven");
+        treeMap1.put(2,"two");
+        treeMap1.put(3,"three");
+        treeMap1.put(7,"seven");
+        treeMap1.put(5,"five");
+
+        treeMap.comparator();
+        //System.out.println("unsorted : " + treeMap1);
+        System.out.println("sort keys using comparator : " + treeMap1);
+
+        // 18.key value mapping associated with the greatest and the least key
+        Map.Entry<Integer, String> greatest = treeMap1.lastEntry();
+        System.out.println("Key value mapping associated with the greatest key : " + greatest);
+
+        Map.Entry<Integer, String> least = treeMap1.firstEntry();
+        System.out.println("Key value mapping associated with the least key : " + least);
+
+        // 19.first(lowest) key and the last(highest) key in the map
+        System.out.println("first(lowest) key in the map : " + treeMap1.firstKey());
+        System.out.println("last(highest) key in the map : " + treeMap1.lastKey());
+
+        // 20.reverse order view of the keys contained in the map
+        NavigableSet<Integer> descendingKeySet = treeMap1.descendingKeySet();
+        System.out.println("reverse order views of the keys in the map : " + descendingKeySet);
+    }
+
+
+}
