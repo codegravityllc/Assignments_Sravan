@@ -1,0 +1,53 @@
+ E-Voucher on Railway
+ 
+Objective: 
+Improved Railway Ticketing provides an easy and efficient way to do many train traveling tasks like reservation of tickets, checking availability of seats, timings of the various trains and cancellation of booked tickets.
+Existing System: 
+Conventionally the common person has to go to outlets of railways to reserve the train tickets and to know any information regarding train journey if needs. Now a day it is some what difficult because of busy life of human being. Here we have provided a good interface for ticket reservation of trains through online for normal people and traveling agencies. So no passengers can come to railway outlets for multiple times regarding train details or reservations.
+Proposed System: 
+This application provides various services to the user. It provides the following facilities.
+•	Information regarding trains
+•	Seat Availability
+•	Online Reservation/ Cancellation
+•	Info about Train Running
+
+Modules:
+
+The system is proposed to have the following modules:
+     
+1.	Administrator
+2.	Passenger 
+3.	Security and authentication
+4.	Reports
+1.	Administrator :
+Administrator adds and removes employees of system and the administrator generates and maintains the reports of the charts.
+2.	 Passenger:
+Passengers can login into the system and search available trains for their travel and they can make reservation, cancellation is very powerful feature of this system that bonus reservation.
+3.	Security and authentication:
+a.	User registration
+b.	Login as employees or administrator
+c.	Change password
+d.	Forgot password
+4.	Reports:
+ In this module the employees and administrator can generate charts sheet date wise.
+
+Software Requirements:-
+•	Web Presentation			:	HTML, CSS 
+•	Client – side Scripting		:	JavaScript 
+•	Programming Language		:	Java
+•	Web based Technologies	:	Servlets, JSP 
+•	Database Connectivity 		: 	JDBC
+•	Java Version			:	JDK1.8
+•	Backend Database		:	Oracle
+•	Operating System		:	Windows, LINUX
+•	Web Server				: 	Tomcat 
+•	Browser				:	IE/Mozilla
+Hardware Requirements (minimum):-
+•	Pentium processor     	:	233 MHZ
+•	RAM Capacity          	:     	512MB 
+•	Hard Disk 			:	20GB 
+•	CD-ROM Drive         	:       	32 HZ
+•	Keyboard	           	:    	108 Standard
+•	Mouse			:	Optical
+•	Monitor			:	15’’ Color Monitor
+
